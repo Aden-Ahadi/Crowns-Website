@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body.light-mode {
+        background-color: white;
+        color: black;
+      }
+
+      body.dark-mode {
+        background-color: black;
+        color: white;
+      }
+
+      p {
+        text-align: center;
+      }
+    </style>
+
+    <style>
+      body {
+        transition: background-color 0.5s, color 0.5s;
+      }
+      body.light-mode {
+        background-color: linear-gradient(135deg, #3498db, #9b59b6);
+        color: black;
+      }
+
+      body.dark-mode {
+        background-color: black;
+        color: white;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      /* Base button styles */
+      .cool-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #ffffff;
+        border: none;
+        border-radius: 50px; /* Unusual circular border shape */
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Hover effect */
+      .cool-button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <p>HELLO WORLD</p>
+    <hr />
+    <button class="cool-button" id="mode-toggle">Toggle mode</button>
+    <script>
+      document
+        .getElementById("mode-toggle")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+
+          document.body.classList.toggle("light-mode");
+        });
+    </script>
+  </body>
+</html>

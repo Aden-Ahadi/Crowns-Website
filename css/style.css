@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  height: 210vh;
+  background-color: aliceblue;
+}
+
+/* Navigation Bar*/
+
+nav {
+  background: black;
+  display: flex;
+  margin-left: 0;
+  padding: 0rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-header span {
+  margin-left: 2rem;
+  color: white;
+}
+
+.logo {
+  font-family: helvetica;
+  margin: 0 1rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: red;
+}
+
+/* Hero Section*/
+
+.hero-container {
+  display: flex;
+  padding-top: 60px;
+  height: 75vh;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-text {
+  color: orange;
+  margin: 8rem;
+  text-align: center;
+}
+
+.slogan {
+  background: black;
+  border-radius: 30px;
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 1rem;
+  padding: 2px;
+  text-align: center;
+  text-decoration: solid;
+  text-transform: uppercase;
+}
+
+/* Menu */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1140px;
+  margin: 2rem auto;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 10px;
+  max-width: 300px;
+  padding: 16px;
+  text-align: center;
+  transition: box-shadow 0.7s;
+}
+
+.card:hover {
+  box-shadow: -4px 10px 20px red;
+}
+
+.card-header {
+  border-radius: 8px 8px 0 0;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-header img {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  margin-top: 10px;
+}
+
+.order-button {
+  background-color: red;
+  border-radius: 70px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+
+.order-button:hover {
+  background: greenyellow;
+  color: black;
+}
+
+h2 {
+  color: red;
+  text-decoration: underline;
+}
+
+/*Footer*/
+
+.love {
+  align-items: flex-end;
+  background: black;
+  color: rgb(255, 247, 247);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.love-message {
+  font-size: 14px;
+  filter: opacity(60%);
+}
